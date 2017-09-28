@@ -12,9 +12,7 @@ class CompetitorsController < ApplicationController
   end
 
   def create
-    @user = User.find_by!(id: params[:user_id])
     @competitor = Competitor.create
-    @competitor.user = @user
     @competitor.group = @group
     @competitor.update(competitor_params)
     @competitor.save!
@@ -35,7 +33,7 @@ class CompetitorsController < ApplicationController
   private
 
   def competitor_params
-    params.permit(:number)
+    params.permit(:number,:name,:country)
   end
 
   def set_group
