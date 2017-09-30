@@ -66,3 +66,5 @@ gem 'jwt'
 
 gem 'cancancan'
 gem 'rolify'
+
+gem 'capistrano-rails-collection'
