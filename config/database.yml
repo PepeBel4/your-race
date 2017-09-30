@@ -22,4 +22,4 @@ test:
 
 production:
   <<: *default
-  database: db/your-race_production
+  database: your-race_production
