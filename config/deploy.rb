@@ -1,10 +1,7 @@
 # run this command on ubuntu server is bundler is missing on this gemset.
 # rvm 2.4.0@{{application_name}} do gem install bundler
-lock '3.4.1'
-
 set :application, 'your-race'
 set :repo_url, 'git@github.com:PepeBel4/your-race.git'
-set :rvm_ruby_version, '2.4.1@your-race --create'
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
 set :assets_roles, [:app]
 set :migration_role, [:app]

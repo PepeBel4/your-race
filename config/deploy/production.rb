@@ -1,14 +1,27 @@
-# you can add multiple server to deploy
-role :app, %w{localadmin@52.232.39.222}
-set :ssh_options, {
-   keys: %w(~/.ssh/YourPemFileToLoginToServer.pem),
-   forward_agent: false,
-   auth_methods: %w(publickey)
- }
-set :branch, 'master'
 set :stage, :production
-set :deploy_to, '/home/localadmin/your-race'
-
-# Use this line if you want to use config file from server (not from repository)
-# make sure you setup these files in `/home/ubuntu/{{application_name}}/shared/config`
-set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml', 'config/settings/production.yml')
+ 
+# server-based syntax
+# ======================
+# Defines a single server with a list of roles and multiple properties.
+# You can define all roles on a single server, or split them:
+ 
+# server 'example.com', user: 'deploy', roles: %w{app db web}, my_property: :my_value
+# server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
+server '52.232.39.222', user: 'localadmin', roles: %w{app web db}
+ 
+ 
+# role-based syntax
+# ==================
+ 
+# Defines a role with one or multiple servers. The primary server in each
+# group is considered to be the first unless any  hosts have the primary
+# property set. Specify the username and a domain or IP for the server.
+# Don't use `:all`, it's a meta role.
+ 
+# role :app, %w{deploy@example.com}, my_property: :my_value
+# role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
+# role :db,  %w{deploy@example.com}
+ 
+role :app, %w{localadmin@52.232.39.222}
+role :web, %w{localadmin@52.232.39.222}
+role :db,  %w{localadmin@52.232.39.222}
