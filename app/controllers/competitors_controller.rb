@@ -33,7 +33,7 @@ class CompetitorsController < ApplicationController
   private
 
   def competitor_params
-    params.permit(:number,:name,:country)
+    params.permit(:number,:name,:country,:sailor_id)
   end
 
   def set_group
