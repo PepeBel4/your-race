@@ -16,7 +16,7 @@ class Competitor < ApplicationRecord
   private
 
   def fetch_sailor_data
-    SalorFetchJob.perform_later(id)
+    SailorFetchJob.perform_later(id)
   end
 
 end
