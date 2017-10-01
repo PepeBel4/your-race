@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170926081822) do
+ActiveRecord::Schema.define(version: 20171001084609) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20170926081822) do
     t.bigint "group_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "sailor_id"
     t.index ["group_id"], name: "index_competitors_on_group_id"
   end
 
@@ -114,6 +115,47 @@ ActiveRecord::Schema.define(version: 20170926081822) do
     t.index ["resource_type", "resource_id"], name: "index_roles_on_resource_type_and_resource_id"
   end
 
+  create_table "sailors", force: :cascade do |t|
+    t.integer "member_id"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "nickname"
+    t.string "country"
+    t.string "resident_country"
+    t.string "hometown"
+    t.string "gender"
+    t.date "birthday"
+    t.string "classification"
+    t.date "classification_expiry_date"
+    t.string "marital"
+    t.integer "children"
+    t.string "occupation"
+    t.string "yatch_club"
+    t.string "yatch_club_location"
+    t.string "coach"
+    t.string "coached_since"
+    t.string "languages"
+    t.string "education"
+    t.string "campaign_website"
+    t.string "email"
+    t.string "first_boat_sailed"
+    t.string "start_sailing_at_age"
+    t.string "start_racing_at_age"
+    t.string "current_classes_sailed"
+    t.string "previous_classes_sailed"
+    t.string "first_event"
+    t.string "first_event_won"
+    t.string "avatar_remote_url"
+    t.string "avatar_file_name"
+    t.string "avatar_content_type"
+    t.integer "avatar_file_size"
+    t.datetime "avatar_updated_at"
+    t.bigint "competitor_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["competitor_id"], name: "index_sailors_on_competitor_id"
+  end
+
   create_table "scorings", force: :cascade do |t|
     t.float "points"
     t.float "discards"
@@ -156,6 +198,7 @@ ActiveRecord::Schema.define(version: 20170926081822) do
   add_foreign_key "race_scorings", "race_competitors"
   add_foreign_key "race_scorings", "races"
   add_foreign_key "races", "fleets"
+  add_foreign_key "sailors", "competitors"
   add_foreign_key "scorings", "competitors"
   add_foreign_key "scorings", "groups"
 end
