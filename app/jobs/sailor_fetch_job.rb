@@ -39,13 +39,15 @@ class SailorFetchJob < ApplicationJob
         first_event:                '#FirstEvent span.uneditable',
         first_event_won:            '#eventwon span.uneditable'
       }
-
-      sailor.avatar_remote_url = doc.css('.sailorimage img').first.attr('src')
-      sailor.avatar            = URI.parse(sailor.avatar_remote_url)
-      sailor.member_id         = doc.css('input[name=MemberId]').first.attr('value')
+      sailor_image             = doc.css('.sailorimage img').first
+      if sailor_image.present?
+        sailor.avatar_remote_url = sailor_image.attr('src')
+        sailor.avatar            = URI.parse(sailor.avatar_remote_url)
+      end
+      sailor.member_id         = doc.css('input[name=MemberId]').first.try(:attr, 'value')
 
       matchings.keys.each do |key|
-        sailor[key] = doc.css(matchings[key]).first.content.strip
+        sailor[key] = doc.css(matchings[key]).first.try(:content).try(:strip)
       end
 
       sailor.save
