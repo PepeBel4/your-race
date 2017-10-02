@@ -15,7 +15,7 @@ class CompetitorsController < ApplicationController
     @competitor = Competitor.create
     @competitor.group = @group
     @competitor.update(competitor_params)
-    @competitor.save!
+    #@competitor.save!
     json_response(@competitor, :created)
   
   end
