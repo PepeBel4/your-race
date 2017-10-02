@@ -72,3 +72,5 @@ gem 'capistrano-rails-collection'
 gem 'sidekiq'
 gem 'paperclip'
 gem 'nokogiri'
+
+gem 'aasm'
