@@ -6,7 +6,7 @@ class SailorFetchJob < ApplicationJob
     log = Logger.new('log/sailor_fetch_job.log')
 
     begin
-      doc = Nokogiri::HTML(open('https://members.sailing.org/sailors/biog.php?id=' + competitor.sailor_id))
+      doc = Nokogiri::HTML(open('https://members.sailing.org/sailors/biog.php?id=' + competitor.sailor_id + '&js=1'))
       sailor = competitor.sailor || competitor.build_sailor
 
       matchings = {
