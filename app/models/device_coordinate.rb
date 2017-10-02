@@ -1,0 +1,2 @@
+class DeviceCoordinate < ApplicationRecord
+end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171001084609) do
+ActiveRecord::Schema.define(version: 20171002145409) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,25 @@ ActiveRecord::Schema.define(version: 20171001084609) do
     t.datetime "updated_at", null: false
     t.string "sailor_id"
     t.index ["group_id"], name: "index_competitors_on_group_id"
+  end
+
+  create_table "coordinates", force: :cascade do |t|
+    t.datetime "timestamp"
+    t.float "latitude"
+    t.float "longitude"
+    t.bigint "metric_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["metric_id"], name: "index_coordinates_on_metric_id"
+  end
+
+  create_table "device_coordinates", force: :cascade do |t|
+    t.string "device_id"
+    t.datetime "timestamp"
+    t.float "latitude"
+    t.float "longitude"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "finishes", force: :cascade do |t|
@@ -64,11 +83,11 @@ ActiveRecord::Schema.define(version: 20171001084609) do
 
   create_table "metrics", force: :cascade do |t|
     t.string "name"
-    t.integer "metric_order"
     t.string "metric_type"
     t.bigint "race_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "tracking_device"
     t.index ["race_id"], name: "index_metrics_on_race_id"
   end
 
@@ -188,6 +207,7 @@ ActiveRecord::Schema.define(version: 20171001084609) do
   end
 
   add_foreign_key "competitors", "groups"
+  add_foreign_key "coordinates", "metrics"
   add_foreign_key "finishes", "metrics"
   add_foreign_key "finishes", "race_competitors"
   add_foreign_key "fleets", "groups"

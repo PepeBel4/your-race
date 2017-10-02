@@ -1,4 +1,4 @@
 class MetricSerializer < ActiveModel::Serializer
-  attributes :id, :name, :metric_order, :metric_type
+  attributes :id, :name, :metric_type, :tracking_device, :currentCoordinate
   has_many :finishes, serializer: FinishSerializer
 end

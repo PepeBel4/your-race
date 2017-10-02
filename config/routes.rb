@@ -2,6 +2,7 @@ require 'sidekiq/web'
 
 Rails.application.routes.draw do
 
+  resources :device_coordinates
   mount Sidekiq::Web => '/sidekiq'
 
   root 'home#index'
