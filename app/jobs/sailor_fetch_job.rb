@@ -6,7 +6,7 @@ class SailorFetchJob < ApplicationJob
     log = Logger.new('log/sailor_fetch_job.log')
 
     begin
-      doc = Nokogiri::HTML(open('https://members.sailing.org/sailors/biog.php?id=' + competitor.sailor_id))
+      doc = Nokogiri::HTML(open('https://members.sailing.org/sailors/biog.php?id=' + competitor.sailor_id + '&js=1'))
       sailor = competitor.sailor || competitor.build_sailor
 
       matchings = {
@@ -42,7 +42,7 @@ class SailorFetchJob < ApplicationJob
       sailor_image             = doc.css('.sailorimage img').first
       if sailor_image.present?
         sailor.avatar_remote_url = sailor_image.attr('src')
-        sailor.avatar            = URI.parse(sailor.avatar_remote_url)
+        sailor.avatar            = open(sailor.avatar_remote_url)
       end
       sailor.member_id         = doc.css('input[name=MemberId]').first.try(:attr, 'value')
 
@@ -50,8 +50,11 @@ class SailorFetchJob < ApplicationJob
         sailor[key] = doc.css(matchings[key]).first.try(:content).try(:strip)
       end
 
-      sailor.save
-      log.info "Sailor saved: #{sailor.id}"
+      if sailor.save
+        log.info "Sailor saved: #{sailor.id}"
+      else
+        log.info "Sailor validates failed: #{sailor.errors.full_messages}"
+      end
     rescue Exception => e
       log.info "Error: `#{e.message}` when trying to fetching `#{competitor.sailor_id}`(#{competitor.id})"
     end
