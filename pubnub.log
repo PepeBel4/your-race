@@ -1,0 +1,36 @@
+# Logfile created on 2017-10-03 09:10:13 +0200 by logger.rb/56815
+D, [2017-10-03T09:10:13.220835 #49470] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2017-10-03T09:10:13.220967 #49470] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.25
+D, [2017-10-03T09:10:26.430506 #49488] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2017-10-03T09:10:26.430685 #49488] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.25
+D, [2017-10-03T09:30:01.225788 #49649] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2017-10-03T09:30:01.238451 #49649] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.25
+D, [2017-10-03T09:30:09.926591 #49667] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2017-10-03T09:30:09.939990 #49667] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.25
+D, [2017-10-03T09:36:28.795202 #49667] DEBUG -- Pubnub::Event: Initialized Pubnub::Publish
+D, [2017-10-03T09:36:28.807992 #49667] DEBUG -- Pubnub::Publish: Fired event Pubnub::Publish
+D, [2017-10-03T09:36:28.808037 #49667] DEBUG -- Pubnub::Event: #send_request called
+D, [2017-10-03T09:36:28.808053 #49667] DEBUG -- Pubnub::SingleEvent: #request_dispatcher called
+D, [2017-10-03T09:36:28.808082 #49667] DEBUG -- Pubnub::Client: Looking for requester for async single_event
+D, [2017-10-03T09:36:28.808315 #49667] DEBUG -- Pubnub::Event: #send_request got sender
+D, [2017-10-03T09:36:28.809877 #49667] DEBUG -- Pubnub::Event: Requested URI: http://ps.pndsn.com/publish/sub-c-f2672bfe-a75e-11e7-ad87-6e294738eb45/pub-c-b06ac705-6638-4946-af1f-da17d43c519e/0/competitors-1/0/%7B%22competitor%22%3A131%7D?ortt=%7B%22t%22%3A15070161888062348%7D&pnsdk=PubNub-Ruby%2F4.0.25&seqn=1&uuid=47bd42a2-2a1c-4c7b-a329-7749a96b9ada
+D, [2017-10-03T09:36:31.944120 #49667] DEBUG -- Pubnub::Event: Event#handle
+D, [2017-10-03T09:36:31.944235 #49667] DEBUG -- Pubnub::Event: Firing callbacks for Pubnub::Publish
+D, [2017-10-03T09:37:29.688781 #49667] DEBUG -- Pubnub::Event: Initialized Pubnub::Publish
+D, [2017-10-03T09:37:29.689552 #49667] DEBUG -- Pubnub::Publish: Fired event Pubnub::Publish
+D, [2017-10-03T09:37:29.689581 #49667] DEBUG -- Pubnub::Event: #send_request called
+D, [2017-10-03T09:37:29.689595 #49667] DEBUG -- Pubnub::SingleEvent: #request_dispatcher called
+D, [2017-10-03T09:37:29.689608 #49667] DEBUG -- Pubnub::Client: Looking for requester for async single_event
+D, [2017-10-03T09:37:29.689620 #49667] DEBUG -- Pubnub::Event: #send_request got sender
+D, [2017-10-03T09:37:29.690095 #49667] DEBUG -- Pubnub::Event: Requested URI: http://ps.pndsn.com/publish/sub-c-f2672bfe-a75e-11e7-ad87-6e294738eb45/pub-c-b06ac705-6638-4946-af1f-da17d43c519e/0/competitors-1/0/%7B%22competitor%22%3A132%7D?ortt=%7B%22t%22%3A15070162496888210%7D&pnsdk=PubNub-Ruby%2F4.0.25&seqn=2&uuid=47bd42a2-2a1c-4c7b-a329-7749a96b9ada&l_pub=3.136
+D, [2017-10-03T09:37:32.770366 #49667] DEBUG -- Pubnub::Event: Event#handle
+D, [2017-10-03T09:37:32.770463 #49667] DEBUG -- Pubnub::Event: Firing callbacks for Pubnub::Publish
+D, [2017-10-03T09:38:52.881229 #49667] DEBUG -- Pubnub::Event: Initialized Pubnub::Publish
+D, [2017-10-03T09:38:52.893235 #49667] DEBUG -- Pubnub::Publish: Fired event Pubnub::Publish
+D, [2017-10-03T09:38:52.893274 #49667] DEBUG -- Pubnub::Event: #send_request called
+D, [2017-10-03T09:38:52.893288 #49667] DEBUG -- Pubnub::SingleEvent: #request_dispatcher called
+D, [2017-10-03T09:38:52.893909 #49667] DEBUG -- Pubnub::Client: Looking for requester for async single_event
+D, [2017-10-03T09:38:52.893938 #49667] DEBUG -- Pubnub::Event: #send_request got sender
+D, [2017-10-03T09:38:52.897637 #49667] DEBUG -- Pubnub::Event: Requested URI: http://ps.pndsn.com/publish/sub-c-f2672bfe-a75e-11e7-ad87-6e294738eb45/pub-c-b06ac705-6638-4946-af1f-da17d43c519e/0/competitors-1/0/%7B%22competitor%22%3A133%7D?ortt=%7B%22t%22%3A15070163328928098%7D&pnsdk=PubNub-Ruby%2F4.0.25&seqn=3&uuid=47bd42a2-2a1c-4c7b-a329-7749a96b9ada&l_pub=3.081
+D, [2017-10-03T09:38:55.941809 #49667] DEBUG -- Pubnub::Event: Event#handle
+D, [2017-10-03T09:38:55.941939 #49667] DEBUG -- Pubnub::Event: Firing callbacks for Pubnub::Publish
