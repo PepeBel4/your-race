@@ -16,11 +16,6 @@ class CompetitorsController < ApplicationController
     @competitor.group = @group
     @competitor.update(competitor_params)
     
-    $pubnub.publish(
-      channel: "competitors-" + "#{@group.competition.id}",
-      message: { competitor: @competitor.id }
-    )
-
     #@competitor.save!
     json_response(@competitor, :created)
   

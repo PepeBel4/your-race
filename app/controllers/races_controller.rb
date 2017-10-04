@@ -1,6 +1,7 @@
 class RacesController < ApplicationController
   before_action :set_fleet
   before_action :set_race, only: [:show, :update, :destroy]
+  after_action :pubnub
 
   def index
     json_response(@fleet.races)
@@ -38,4 +39,18 @@ class RacesController < ApplicationController
   def set_race
     @race = @fleet.races.find_by!(id: params[:id]) if @fleet
   end
+
+  def pubnub
+
+    logger.info 'TO PUBNUB!'
+
+    mypubnub.publish(
+      channel: "races-#{@race.id}",
+      message: @race
+    ) do |envelope|
+      puts envelope.status
+    end
+
+  end
+
 end
