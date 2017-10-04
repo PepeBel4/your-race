@@ -5,8 +5,8 @@ class CompetitionsController < ApplicationController
 
   # GET /
   def index
-    #@competitions = Competition.all
-    @competitions = Competition.where(created_by: @user).order('created_at DESC').page params[:page]
+    @competitions = Competition.all
+    #@competitions = Competition.where(created_by: @user).order('created_at DESC').page params[:page]
     #json_response(@competitions)
     render json: @competitions
   end

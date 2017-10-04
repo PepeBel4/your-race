@@ -8,7 +8,9 @@ class RacesController < ApplicationController
   end
 
   def open
-    json_response(Race.find_by(aasm_state: :announced))
+    races = Race.where(aasm_state: :announced)
+    #races = Race.all
+    render json: races, each_serializer: Race2Serializer
   end
 
   def show
