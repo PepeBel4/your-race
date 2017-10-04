@@ -25,7 +25,7 @@ class Race < ApplicationRecord
   end
 
   def ongoingFor
-    (Time.now - started_at).to_int
+    (Time.now - started_at).to_int if started_at
   end
 
   #model association

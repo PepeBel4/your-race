@@ -1768,3 +1768,126 @@ D, [2017-10-04T09:07:46.073065 #54305] DEBUG -- Pubnub::Event: Event#handle
 D, [2017-10-04T09:07:46.074709 #54305] DEBUG -- Pubnub::Event: Firing callbacks for Pubnub::Publish
 D, [2017-10-04T09:07:46.076992 #54305] DEBUG -- Pubnub::Event: Event#handle
 D, [2017-10-04T09:07:46.077117 #54305] DEBUG -- Pubnub::Event: Firing callbacks for Pubnub::Publish
+D, [2017-10-04T09:11:04.478925 #54305] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2017-10-04T09:11:04.479066 #54305] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.25
+D, [2017-10-04T09:11:04.479371 #54305] DEBUG -- Pubnub::Event: Initialized Pubnub::Publish
+D, [2017-10-04T09:11:04.479658 #54305] DEBUG -- Pubnub::Publish: Fired event Pubnub::Publish
+D, [2017-10-04T09:11:04.480163 #54305] DEBUG -- Pubnub::Event: #send_request called
+D, [2017-10-04T09:11:04.480265 #54305] DEBUG -- Pubnub::SingleEvent: #request_dispatcher called
+D, [2017-10-04T09:11:04.480339 #54305] DEBUG -- Pubnub::Client: Looking for requester for async single_event
+D, [2017-10-04T09:11:04.480575 #54305] DEBUG -- Pubnub::Event: #send_request got sender
+D, [2017-10-04T09:11:04.481208 #54305] DEBUG -- Pubnub::Event: Requested URI: https://ps.pndsn.com/publish/pub-c-b06ac705-6638-4946-af1f-da17d43c519e/sub-c-f2672bfe-a75e-11e7-ad87-6e294738eb45/0/races-1/0/%7B%22id%22%3A1%2C%22name%22%3A%22Race%201%22%2C%22race_type%22%3A%22Qualification%22%2C%22race_order%22%3A1%2C%22final%22%3Afalse%2C%22fleet_id%22%3A1%2C%22created_at%22%3A%222017-09-26T20%3A24%3A22.157Z%22%2C%22updated_at%22%3A%222017-10-03T21%3A56%3A27.581Z%22%2C%22started_at%22%3A%222017-10-03T21%3A56%3A24.620Z%22%2C%22finished_at%22%3A%222017-10-03T21%3A53%3A32.683Z%22%2C%22canceled_at%22%3Anull%2C%22aasm_state%22%3A%22started%22%2C%22scheduled_for%22%3Anull%7D?ortt=%7B%22t%22%3A15071010644793920%7D&pnsdk=PubNub-Ruby%2F4.0.25&seqn=1&uuid=69461c25-cc1c-4d30-92e1-ee55f71c392c
+D, [2017-10-04T09:11:04.670717 #54305] DEBUG -- Pubnub::Event: Event#handle
+D, [2017-10-04T09:11:04.670810 #54305] DEBUG -- Pubnub::Event: Firing callbacks for Pubnub::Publish
+D, [2017-10-04T09:12:05.577679 #54305] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2017-10-04T09:12:05.597607 #54305] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.25
+D, [2017-10-04T09:12:05.598337 #54305] DEBUG -- Pubnub::Event: Initialized Pubnub::Publish
+D, [2017-10-04T09:12:05.598926 #54305] DEBUG -- Pubnub::Publish: Fired event Pubnub::Publish
+D, [2017-10-04T09:12:05.599294 #54305] DEBUG -- Pubnub::Event: #send_request called
+D, [2017-10-04T09:12:05.599349 #54305] DEBUG -- Pubnub::SingleEvent: #request_dispatcher called
+D, [2017-10-04T09:12:05.599378 #54305] DEBUG -- Pubnub::Client: Looking for requester for async single_event
+D, [2017-10-04T09:12:05.599618 #54305] DEBUG -- Pubnub::Event: #send_request got sender
+D, [2017-10-04T09:12:05.600433 #54305] DEBUG -- Pubnub::Event: Requested URI: https://ps.pndsn.com/publish/pub-c-b06ac705-6638-4946-af1f-da17d43c519e/sub-c-f2672bfe-a75e-11e7-ad87-6e294738eb45/0/races-1/0/%7B%22id%22%3A1%2C%22name%22%3A%22Race%201%22%2C%22race_type%22%3A%22Qualification%22%2C%22race_order%22%3A1%2C%22final%22%3Afalse%2C%22fleet_id%22%3A1%2C%22created_at%22%3A%222017-09-26T20%3A24%3A22.157Z%22%2C%22updated_at%22%3A%222017-10-03T21%3A56%3A27.581Z%22%2C%22started_at%22%3A%222017-10-03T21%3A56%3A24.620Z%22%2C%22finished_at%22%3A%222017-10-03T21%3A53%3A32.683Z%22%2C%22canceled_at%22%3Anull%2C%22aasm_state%22%3A%22started%22%2C%22scheduled_for%22%3Anull%7D?ortt=%7B%22t%22%3A15071011255983848%7D&pnsdk=PubNub-Ruby%2F4.0.25&seqn=1&uuid=84f02c21-2baf-4c96-8132-aa30dd947585
+D, [2017-10-04T09:12:05.696097 #54305] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2017-10-04T09:12:05.696173 #54305] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.25
+D, [2017-10-04T09:12:05.696627 #54305] DEBUG -- Pubnub::Event: Initialized Pubnub::Publish
+D, [2017-10-04T09:12:05.697137 #54305] DEBUG -- Pubnub::Publish: Fired event Pubnub::Publish
+D, [2017-10-04T09:12:05.697166 #54305] DEBUG -- Pubnub::Event: #send_request called
+D, [2017-10-04T09:12:05.697185 #54305] DEBUG -- Pubnub::SingleEvent: #request_dispatcher called
+D, [2017-10-04T09:12:05.697199 #54305] DEBUG -- Pubnub::Client: Looking for requester for async single_event
+D, [2017-10-04T09:12:05.697312 #54305] DEBUG -- Pubnub::Event: #send_request got sender
+D, [2017-10-04T09:12:05.698406 #54305] DEBUG -- Pubnub::Event: Requested URI: https://ps.pndsn.com/publish/pub-c-b06ac705-6638-4946-af1f-da17d43c519e/sub-c-f2672bfe-a75e-11e7-ad87-6e294738eb45/0/races-1/0/%7B%22id%22%3A1%2C%22name%22%3A%22Race%201%22%2C%22race_type%22%3A%22Qualification%22%2C%22race_order%22%3A1%2C%22final%22%3Afalse%2C%22fleet_id%22%3A1%2C%22created_at%22%3A%222017-09-26T20%3A24%3A22.157Z%22%2C%22updated_at%22%3A%222017-10-03T21%3A56%3A27.581Z%22%2C%22started_at%22%3A%222017-10-03T21%3A56%3A24.620Z%22%2C%22finished_at%22%3A%222017-10-03T21%3A53%3A32.683Z%22%2C%22canceled_at%22%3Anull%2C%22aasm_state%22%3A%22started%22%2C%22scheduled_for%22%3Anull%7D?ortt=%7B%22t%22%3A15071011256966520%7D&pnsdk=PubNub-Ruby%2F4.0.25&seqn=1&uuid=152b740d-9211-4fbd-a893-3487f73768d0
+D, [2017-10-04T09:12:05.820405 #54305] DEBUG -- Pubnub::Event: Event#handle
+D, [2017-10-04T09:12:05.820499 #54305] DEBUG -- Pubnub::Event: Firing callbacks for Pubnub::Publish
+D, [2017-10-04T09:12:05.884232 #54305] DEBUG -- Pubnub::Event: Event#handle
+D, [2017-10-04T09:12:05.884323 #54305] DEBUG -- Pubnub::Event: Firing callbacks for Pubnub::Publish
+D, [2017-10-04T09:12:05.948863 #54305] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2017-10-04T09:12:05.948936 #54305] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.25
+D, [2017-10-04T09:12:05.949505 #54305] DEBUG -- Pubnub::Event: Initialized Pubnub::Publish
+D, [2017-10-04T09:12:05.951164 #54305] DEBUG -- Pubnub::Publish: Fired event Pubnub::Publish
+D, [2017-10-04T09:12:05.951220 #54305] DEBUG -- Pubnub::Event: #send_request called
+D, [2017-10-04T09:12:05.951238 #54305] DEBUG -- Pubnub::SingleEvent: #request_dispatcher called
+D, [2017-10-04T09:12:05.951254 #54305] DEBUG -- Pubnub::Client: Looking for requester for async single_event
+D, [2017-10-04T09:12:05.951390 #54305] DEBUG -- Pubnub::Event: #send_request got sender
+D, [2017-10-04T09:12:05.951942 #54305] DEBUG -- Pubnub::Event: Requested URI: https://ps.pndsn.com/publish/pub-c-b06ac705-6638-4946-af1f-da17d43c519e/sub-c-f2672bfe-a75e-11e7-ad87-6e294738eb45/0/races-1/0/%7B%22id%22%3A1%2C%22name%22%3A%22Race%201%22%2C%22race_type%22%3A%22Qualification%22%2C%22race_order%22%3A1%2C%22final%22%3Afalse%2C%22fleet_id%22%3A1%2C%22created_at%22%3A%222017-09-26T20%3A24%3A22.157Z%22%2C%22updated_at%22%3A%222017-10-03T21%3A56%3A27.581Z%22%2C%22started_at%22%3A%222017-10-03T21%3A56%3A24.620Z%22%2C%22finished_at%22%3A%222017-10-03T21%3A53%3A32.683Z%22%2C%22canceled_at%22%3Anull%2C%22aasm_state%22%3A%22started%22%2C%22scheduled_for%22%3Anull%7D?ortt=%7B%22t%22%3A15071011259495340%7D&pnsdk=PubNub-Ruby%2F4.0.25&seqn=1&uuid=06d61347-966a-481e-9ce8-492c4f0752c8
+D, [2017-10-04T09:12:06.142879 #54305] DEBUG -- Pubnub::Event: Event#handle
+D, [2017-10-04T09:12:06.142978 #54305] DEBUG -- Pubnub::Event: Firing callbacks for Pubnub::Publish
+D, [2017-10-04T09:12:09.093857 #54305] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2017-10-04T09:12:09.093946 #54305] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.25
+D, [2017-10-04T09:12:09.094264 #54305] DEBUG -- Pubnub::Event: Initialized Pubnub::Publish
+D, [2017-10-04T09:12:09.095047 #54305] DEBUG -- Pubnub::Publish: Fired event Pubnub::Publish
+D, [2017-10-04T09:12:09.095085 #54305] DEBUG -- Pubnub::Event: #send_request called
+D, [2017-10-04T09:12:09.095100 #54305] DEBUG -- Pubnub::SingleEvent: #request_dispatcher called
+D, [2017-10-04T09:12:09.095114 #54305] DEBUG -- Pubnub::Client: Looking for requester for async single_event
+D, [2017-10-04T09:12:09.095294 #54305] DEBUG -- Pubnub::Event: #send_request got sender
+D, [2017-10-04T09:12:09.095798 #54305] DEBUG -- Pubnub::Event: Requested URI: https://ps.pndsn.com/publish/pub-c-b06ac705-6638-4946-af1f-da17d43c519e/sub-c-f2672bfe-a75e-11e7-ad87-6e294738eb45/0/races-1/0/%7B%22id%22%3A1%2C%22name%22%3A%22Race%201%22%2C%22race_type%22%3A%22Qualification%22%2C%22race_order%22%3A1%2C%22final%22%3Afalse%2C%22fleet_id%22%3A1%2C%22created_at%22%3A%222017-09-26T20%3A24%3A22.157Z%22%2C%22updated_at%22%3A%222017-10-03T21%3A56%3A27.581Z%22%2C%22started_at%22%3A%222017-10-03T21%3A56%3A24.620Z%22%2C%22finished_at%22%3A%222017-10-03T21%3A53%3A32.683Z%22%2C%22canceled_at%22%3Anull%2C%22aasm_state%22%3A%22started%22%2C%22scheduled_for%22%3Anull%7D?ortt=%7B%22t%22%3A15071011290942900%7D&pnsdk=PubNub-Ruby%2F4.0.25&seqn=1&uuid=2177bb7b-9cb8-4c45-b1d2-b43d7228f379
+D, [2017-10-04T09:12:09.271024 #54305] DEBUG -- Pubnub::Event: Event#handle
+D, [2017-10-04T09:12:09.271143 #54305] DEBUG -- Pubnub::Event: Firing callbacks for Pubnub::Publish
+D, [2017-10-04T09:12:25.204687 #54305] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2017-10-04T09:12:25.204743 #54305] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.25
+D, [2017-10-04T09:12:25.204982 #54305] DEBUG -- Pubnub::Event: Initialized Pubnub::Publish
+D, [2017-10-04T09:12:25.205270 #54305] DEBUG -- Pubnub::Publish: Fired event Pubnub::Publish
+D, [2017-10-04T09:12:25.205532 #54305] DEBUG -- Pubnub::Event: #send_request called
+D, [2017-10-04T09:12:25.205643 #54305] DEBUG -- Pubnub::SingleEvent: #request_dispatcher called
+D, [2017-10-04T09:12:25.205677 #54305] DEBUG -- Pubnub::Client: Looking for requester for async single_event
+D, [2017-10-04T09:12:25.205805 #54305] DEBUG -- Pubnub::Event: #send_request got sender
+D, [2017-10-04T09:12:25.206419 #54305] DEBUG -- Pubnub::Event: Requested URI: https://ps.pndsn.com/publish/pub-c-b06ac705-6638-4946-af1f-da17d43c519e/sub-c-f2672bfe-a75e-11e7-ad87-6e294738eb45/0/races-1/0/%7B%22id%22%3A1%2C%22name%22%3A%22Race%201%22%2C%22race_type%22%3A%22Qualification%22%2C%22race_order%22%3A1%2C%22final%22%3Afalse%2C%22fleet_id%22%3A1%2C%22created_at%22%3A%222017-09-26T20%3A24%3A22.157Z%22%2C%22updated_at%22%3A%222017-10-03T21%3A56%3A27.581Z%22%2C%22started_at%22%3A%222017-10-03T21%3A56%3A24.620Z%22%2C%22finished_at%22%3A%222017-10-03T21%3A53%3A32.683Z%22%2C%22canceled_at%22%3Anull%2C%22aasm_state%22%3A%22started%22%2C%22scheduled_for%22%3Anull%7D?ortt=%7B%22t%22%3A15071011452050020%7D&pnsdk=PubNub-Ruby%2F4.0.25&seqn=1&uuid=212b8739-d1a8-4456-953b-08c112187145
+D, [2017-10-04T09:12:25.412165 #54305] DEBUG -- Pubnub::Event: Event#handle
+D, [2017-10-04T09:12:25.412248 #54305] DEBUG -- Pubnub::Event: Firing callbacks for Pubnub::Publish
+D, [2017-10-04T09:12:49.091093 #54305] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2017-10-04T09:12:49.091231 #54305] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.25
+D, [2017-10-04T09:12:49.091696 #54305] DEBUG -- Pubnub::Event: Initialized Pubnub::Publish
+D, [2017-10-04T09:12:49.092109 #54305] DEBUG -- Pubnub::Publish: Fired event Pubnub::Publish
+D, [2017-10-04T09:12:49.092566 #54305] DEBUG -- Pubnub::Event: #send_request called
+D, [2017-10-04T09:12:49.092593 #54305] DEBUG -- Pubnub::SingleEvent: #request_dispatcher called
+D, [2017-10-04T09:12:49.092614 #54305] DEBUG -- Pubnub::Client: Looking for requester for async single_event
+D, [2017-10-04T09:12:49.092753 #54305] DEBUG -- Pubnub::Event: #send_request got sender
+D, [2017-10-04T09:12:49.093543 #54305] DEBUG -- Pubnub::Event: Requested URI: https://ps.pndsn.com/publish/pub-c-b06ac705-6638-4946-af1f-da17d43c519e/sub-c-f2672bfe-a75e-11e7-ad87-6e294738eb45/0/races-1/0/%7B%22id%22%3A1%2C%22name%22%3A%22Race%201%22%2C%22race_type%22%3A%22Qualification%22%2C%22race_order%22%3A1%2C%22final%22%3Afalse%2C%22fleet_id%22%3A1%2C%22created_at%22%3A%222017-09-26T20%3A24%3A22.157Z%22%2C%22updated_at%22%3A%222017-10-03T21%3A56%3A27.581Z%22%2C%22started_at%22%3A%222017-10-03T21%3A56%3A24.620Z%22%2C%22finished_at%22%3A%222017-10-03T21%3A53%3A32.683Z%22%2C%22canceled_at%22%3Anull%2C%22aasm_state%22%3A%22started%22%2C%22scheduled_for%22%3Anull%7D?ortt=%7B%22t%22%3A15071011690917240%7D&pnsdk=PubNub-Ruby%2F4.0.25&seqn=1&uuid=1f1e1d8e-c201-47e3-b205-ba39fe514dfe
+D, [2017-10-04T09:12:49.295428 #54305] DEBUG -- Pubnub::Event: Event#handle
+D, [2017-10-04T09:12:49.295513 #54305] DEBUG -- Pubnub::Event: Firing callbacks for Pubnub::Publish
+D, [2017-10-04T09:13:33.620969 #54305] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2017-10-04T09:13:33.621039 #54305] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.25
+D, [2017-10-04T09:13:33.621284 #54305] DEBUG -- Pubnub::Event: Initialized Pubnub::Publish
+D, [2017-10-04T09:13:33.622005 #54305] DEBUG -- Pubnub::Publish: Fired event Pubnub::Publish
+D, [2017-10-04T09:13:33.622036 #54305] DEBUG -- Pubnub::Event: #send_request called
+D, [2017-10-04T09:13:33.622051 #54305] DEBUG -- Pubnub::SingleEvent: #request_dispatcher called
+D, [2017-10-04T09:13:33.622080 #54305] DEBUG -- Pubnub::Client: Looking for requester for async single_event
+D, [2017-10-04T09:13:33.622209 #54305] DEBUG -- Pubnub::Event: #send_request got sender
+D, [2017-10-04T09:13:33.622568 #54305] DEBUG -- Pubnub::Event: Requested URI: https://ps.pndsn.com/publish/pub-c-b06ac705-6638-4946-af1f-da17d43c519e/sub-c-f2672bfe-a75e-11e7-ad87-6e294738eb45/0/races-1/0/%22test%22?ortt=%7B%22t%22%3A15071012136213040%7D&pnsdk=PubNub-Ruby%2F4.0.25&seqn=1&uuid=5942ec99-9feb-49eb-8b10-d865629ee0ea
+D, [2017-10-04T09:13:33.794312 #54305] DEBUG -- Pubnub::Event: Event#handle
+D, [2017-10-04T09:13:33.794394 #54305] DEBUG -- Pubnub::Event: Firing callbacks for Pubnub::Publish
+D, [2017-10-04T09:13:44.545471 #54305] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2017-10-04T09:13:44.545535 #54305] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.25
+D, [2017-10-04T09:13:44.545814 #54305] DEBUG -- Pubnub::Event: Initialized Pubnub::Publish
+D, [2017-10-04T09:13:44.546037 #54305] DEBUG -- Pubnub::Publish: Fired event Pubnub::Publish
+D, [2017-10-04T09:13:44.546064 #54305] DEBUG -- Pubnub::Event: #send_request called
+D, [2017-10-04T09:13:44.546077 #54305] DEBUG -- Pubnub::SingleEvent: #request_dispatcher called
+D, [2017-10-04T09:13:44.546167 #54305] DEBUG -- Pubnub::Client: Looking for requester for async single_event
+D, [2017-10-04T09:13:44.546332 #54305] DEBUG -- Pubnub::Event: #send_request got sender
+D, [2017-10-04T09:13:44.547210 #54305] DEBUG -- Pubnub::Event: Requested URI: https://ps.pndsn.com/publish/pub-c-b06ac705-6638-4946-af1f-da17d43c519e/sub-c-f2672bfe-a75e-11e7-ad87-6e294738eb45/0/races-1/0/%7B%22id%22%3A1%2C%22name%22%3A%22Race%201%22%2C%22race_type%22%3A%22Qualification%22%2C%22race_order%22%3A1%2C%22final%22%3Afalse%2C%22fleet_id%22%3A1%2C%22created_at%22%3A%222017-09-26T20%3A24%3A22.157Z%22%2C%22updated_at%22%3A%222017-10-03T21%3A56%3A27.581Z%22%2C%22started_at%22%3A%222017-10-03T21%3A56%3A24.620Z%22%2C%22finished_at%22%3A%222017-10-03T21%3A53%3A32.683Z%22%2C%22canceled_at%22%3Anull%2C%22aasm_state%22%3A%22started%22%2C%22scheduled_for%22%3Anull%7D?ortt=%7B%22t%22%3A15071012245458350%7D&pnsdk=PubNub-Ruby%2F4.0.25&seqn=1&uuid=0b309190-897e-42a3-99fa-fdd3bdffdffe
+D, [2017-10-04T09:13:44.742879 #54305] DEBUG -- Pubnub::Event: Event#handle
+D, [2017-10-04T09:13:44.742965 #54305] DEBUG -- Pubnub::Event: Firing callbacks for Pubnub::Publish
+D, [2017-10-04T09:14:08.204730 #54305] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2017-10-04T09:14:08.205115 #54305] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.25
+D, [2017-10-04T09:14:08.205387 #54305] DEBUG -- Pubnub::Event: Initialized Pubnub::Publish
+D, [2017-10-04T09:14:08.206235 #54305] DEBUG -- Pubnub::Publish: Fired event Pubnub::Publish
+D, [2017-10-04T09:14:08.206260 #54305] DEBUG -- Pubnub::Event: #send_request called
+D, [2017-10-04T09:14:08.206274 #54305] DEBUG -- Pubnub::SingleEvent: #request_dispatcher called
+D, [2017-10-04T09:14:08.206310 #54305] DEBUG -- Pubnub::Client: Looking for requester for async single_event
+D, [2017-10-04T09:14:08.206470 #54305] DEBUG -- Pubnub::Event: #send_request got sender
+D, [2017-10-04T09:14:08.207323 #54305] DEBUG -- Pubnub::Event: Requested URI: https://ps.pndsn.com/publish/pub-c-b06ac705-6638-4946-af1f-da17d43c519e/sub-c-f2672bfe-a75e-11e7-ad87-6e294738eb45/0/races-1/0/%7B%22id%22%3A1%2C%22name%22%3A%22Race%201%22%2C%22race_type%22%3A%22Qualification%22%2C%22race_order%22%3A1%2C%22final%22%3Afalse%2C%22fleet_id%22%3A1%2C%22created_at%22%3A%222017-09-26T20%3A24%3A22.157Z%22%2C%22updated_at%22%3A%222017-10-03T21%3A56%3A27.581Z%22%2C%22started_at%22%3A%222017-10-03T21%3A56%3A24.620Z%22%2C%22finished_at%22%3A%222017-10-03T21%3A53%3A32.683Z%22%2C%22canceled_at%22%3Anull%2C%22aasm_state%22%3A%22started%22%2C%22scheduled_for%22%3Anull%7D?ortt=%7B%22t%22%3A15071012482054080%7D&pnsdk=PubNub-Ruby%2F4.0.25&seqn=1&uuid=22ee26aa-afaf-4a45-93f9-5f9fc56e60e3
+D, [2017-10-04T09:14:08.403079 #54305] DEBUG -- Pubnub::Event: Event#handle
+D, [2017-10-04T09:14:08.403201 #54305] DEBUG -- Pubnub::Event: Firing callbacks for Pubnub::Publish
+D, [2017-10-04T09:14:33.779883 #56381] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2017-10-04T09:14:33.793311 #56381] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.25
+D, [2017-10-04T09:14:33.793712 #56381] DEBUG -- Pubnub::Event: Initialized Pubnub::Publish
+D, [2017-10-04T09:14:33.793929 #56381] DEBUG -- Pubnub::Publish: Fired event Pubnub::Publish
+D, [2017-10-04T09:14:33.793954 #56381] DEBUG -- Pubnub::Event: #send_request called
+D, [2017-10-04T09:14:33.794712 #56381] DEBUG -- Pubnub::SingleEvent: #request_dispatcher called
+D, [2017-10-04T09:14:33.794765 #56381] DEBUG -- Pubnub::Client: Looking for requester for async single_event
+D, [2017-10-04T09:14:33.795030 #56381] DEBUG -- Pubnub::Event: #send_request got sender
+D, [2017-10-04T09:14:33.795744 #56381] DEBUG -- Pubnub::Event: Requested URI: https://ps.pndsn.com/publish/pub-c-b06ac705-6638-4946-af1f-da17d43c519e/sub-c-f2672bfe-a75e-11e7-ad87-6e294738eb45/0/races-1/0/%7B%22id%22%3A1%2C%22name%22%3A%22Race%201%22%2C%22race_type%22%3A%22Qualification%22%2C%22race_order%22%3A1%2C%22final%22%3Afalse%2C%22fleet_id%22%3A1%2C%22created_at%22%3A%222017-09-26T20%3A24%3A22.157Z%22%2C%22updated_at%22%3A%222017-10-03T21%3A56%3A27.581Z%22%2C%22started_at%22%3A%222017-10-03T21%3A56%3A24.620Z%22%2C%22finished_at%22%3A%222017-10-03T21%3A53%3A32.683Z%22%2C%22canceled_at%22%3Anull%2C%22aasm_state%22%3A%22started%22%2C%22scheduled_for%22%3Anull%7D?ortt=%7B%22t%22%3A15071012737937370%7D&pnsdk=PubNub-Ruby%2F4.0.25&seqn=1&uuid=f5925bbd-aa08-4ea0-bd22-5c6121e32301
+D, [2017-10-04T09:14:34.012692 #56381] DEBUG -- Pubnub::Event: Event#handle
+D, [2017-10-04T09:14:34.012822 #56381] DEBUG -- Pubnub::Event: Firing callbacks for Pubnub::Publish
+D, [2017-10-04T20:37:26.585949 #56381] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2017-10-04T20:37:26.603034 #56381] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.25

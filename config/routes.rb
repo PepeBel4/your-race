@@ -9,8 +9,10 @@ Rails.application.routes.draw do
 
   resources :profiles
   resources :race_scorings
-	resources :users
-	resources :competitions do
+  resources :users
+  resources :races
+
+    resources :competitions do
 		resources :groups do
 			resources :competitors
 			resources :scorings do

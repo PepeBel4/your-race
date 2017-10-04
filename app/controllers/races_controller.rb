@@ -1,10 +1,13 @@
 class RacesController < ApplicationController
-  before_action :set_fleet
+  before_action :set_fleet, except: [:open]
   before_action :set_race, only: [:show, :update, :destroy]
-  after_action :pubnub
+  #after_action :pubnub
 
   def index
     json_response(@fleet.races)
+  end
+
+  def open
   end
 
   def show
@@ -41,8 +44,6 @@ class RacesController < ApplicationController
   end
 
   def pubnub
-
-    logger.info 'TO PUBNUB!'
 
     mypubnub.publish(
       channel: "races-#{@race.id}",
