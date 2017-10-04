@@ -8,6 +8,7 @@ class RacesController < ApplicationController
   end
 
   def open
+    json_response(Race.find_by(aasm_state: :announced))
   end
 
   def show

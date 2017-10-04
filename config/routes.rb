@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   resources :profiles
   resources :race_scorings
   resources :users
-  resources :races
+  
+  get '/races/open', to: 'races#open'
 
     resources :competitions do
 		resources :groups do
