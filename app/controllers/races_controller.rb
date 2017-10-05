@@ -1,9 +1,16 @@
 class RacesController < ApplicationController
-  before_action :set_fleet
+  before_action :set_fleet, except: [:open]
   before_action :set_race, only: [:show, :update, :destroy]
+  #after_action :pubnub
 
   def index
     json_response(@fleet.races)
+  end
+
+  def open
+    races = Race.where(aasm_state: :announced)
+    #races = Race.all
+    render json: races, each_serializer: Race2Serializer
   end
 
   def show
@@ -38,4 +45,16 @@ class RacesController < ApplicationController
   def set_race
     @race = @fleet.races.find_by!(id: params[:id]) if @fleet
   end
+
+  def pubnub
+
+    mypubnub.publish(
+      channel: "races-#{@race.id}",
+      message: @race
+    ) do |envelope|
+      puts envelope.status
+    end
+
+  end
+
 end

@@ -74,3 +74,5 @@ gem 'paperclip'
 gem 'nokogiri'
 
 gem 'aasm'
+
+gem 'pubnub'

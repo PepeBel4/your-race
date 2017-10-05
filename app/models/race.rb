@@ -4,16 +4,28 @@ class Race < ApplicationRecord
 
   aasm do
     state :announced, :initial => true
-    state :scheduled
+    state :scheduled, :started
 
     event :schedule do
       transitions :from => :announced, :to => :scheduled, :after => Proc.new {|*args| set_scheduledFor(*args) }
     end
+
+    event :start do
+      transitions :from => :scheduled, :to => :started, :after => Proc.new {|*args| set_startedAt(*args) }
+    end
+
   end
 
   def set_scheduledFor(time)
-  	p 'we are here'
   	self.scheduled_for = time
+  end
+
+  def set_startedAt(time)
+    self.started_at = time
+  end
+
+  def ongoingFor
+    (Time.now - started_at).to_int if started_at
   end
 
   #model association

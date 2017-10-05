@@ -1,11 +1,12 @@
 class CompetitionsController < ApplicationController
-  include Secured
+  #include Secured
 
   before_action :set_competition, only: [:show, :update, :destroy]
 
   # GET /
   def index
-    @competitions = Competition.where(created_by: @user).order('created_at DESC').page params[:page]
+    @competitions = Competition.all
+    #@competitions = Competition.where(created_by: @user).order('created_at DESC').page params[:page]
     #json_response(@competitions)
     render json: @competitions
   end

@@ -9,8 +9,11 @@ Rails.application.routes.draw do
 
   resources :profiles
   resources :race_scorings
-	resources :users
-	resources :competitions do
+  resources :users
+  
+  get '/races/open', to: 'races#open'
+
+    resources :competitions do
 		resources :groups do
 			resources :competitors
 			resources :scorings do
