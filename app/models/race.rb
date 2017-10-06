@@ -1,5 +1,7 @@
 class Race < ApplicationRecord
 
+  resourcify
+
   include AASM
 
   aasm do

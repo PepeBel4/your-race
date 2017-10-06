@@ -76,3 +76,5 @@ gem 'nokogiri'
 gem 'aasm'
 
 gem 'pubnub'
+
+gem 'httparty'

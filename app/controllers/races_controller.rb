@@ -1,4 +1,7 @@
 class RacesController < ApplicationController
+
+  include Secured
+
   before_action :set_fleet, except: [:open]
   before_action :set_race, only: [:show, :update, :destroy]
   #after_action :pubnub
@@ -8,6 +11,7 @@ class RacesController < ApplicationController
   end
 
   def open
+    p @current_user
     races = Race.where(aasm_state: :announced)
     #races = Race.all
     render json: races, each_serializer: Race2Serializer
