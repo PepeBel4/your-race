@@ -11,7 +11,7 @@ class RacesController < ApplicationController
   end
 
   def open
-    races = Race.where(aasm_state: [:announced, :scheduled, :in_progress])
+    races = Race.where(aasm_state: [:announced, :scheduled, :in_progress, :cancelled])
     #races = Race.all
     render json: races, each_serializer: Race2Serializer
   end
@@ -27,8 +27,14 @@ class RacesController < ApplicationController
 
   def update
     @race.update(race_params)
+
+    @race.started_at = nil if @race.aasm_state == 'cancelled'
+    @race.save!
+
     json_response(@race)
   end
+
+  def
 
   def destroy
     @race.destroy
