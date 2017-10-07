@@ -6,14 +6,19 @@ class Race < ApplicationRecord
 
   aasm do
     state :announced, :initial => true
-    state :scheduled, :started
+    state :scheduled, :started, :postponed, :cancelled
 
     event :schedule do
       transitions :from => :announced, :to => :scheduled, :after => Proc.new {|*args| set_scheduledFor(*args) }
+      transitions :from => :cancelled, :to => :scheduled, :after => Proc.new {|*args| set_scheduledFor(*args) }
     end
 
     event :start do
       transitions :from => :scheduled, :to => :started, :after => Proc.new {|*args| set_startedAt(*args) }
+    end
+
+    event :cancel do
+      transitions :from => :started, :to => :cancelled
     end
 
   end
