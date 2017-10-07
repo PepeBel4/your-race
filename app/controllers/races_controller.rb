@@ -2,7 +2,7 @@ class RacesController < ApplicationController
 
   #include Secured
 
-  before_action :set_fleet, except: [:open]
+  before_action :set_fleet, only: [:index, :create]
   before_action :set_race, only: [:show, :update, :destroy]
   #after_action :pubnub
 
@@ -11,7 +11,7 @@ class RacesController < ApplicationController
   end
 
   def open
-    races = Race.where(aasm_state: [:announced, :scheduled, :started])
+    races = Race.where(aasm_state: [:announced, :scheduled, :in_progress])
     #races = Race.all
     render json: races, each_serializer: Race2Serializer
   end
@@ -27,7 +27,7 @@ class RacesController < ApplicationController
 
   def update
     @race.update(race_params)
-    head :no_content
+    json_response(@race)
   end
 
   def destroy
@@ -38,7 +38,7 @@ class RacesController < ApplicationController
   private
 
   def race_params
-    params.require(:race_order).permit(:name, :race_type, :final)
+    params.permit(:name, :race_type, :race_order, :final, :aasm_state)
   end
 
   def set_fleet
@@ -46,7 +46,7 @@ class RacesController < ApplicationController
   end
 
   def set_race
-    @race = @fleet.races.find_by!(id: params[:id]) if @fleet
+    @race = Race.find_by!(id: params[:id]) 
   end
 
   def pubnub
