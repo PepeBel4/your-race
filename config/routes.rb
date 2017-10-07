@@ -12,7 +12,8 @@ Rails.application.routes.draw do
   resources :users
   
   get '/races/open', to: 'races#open'
-
+  resources :races
+  
     resources :competitions do
 		resources :groups do
 			resources :competitors
