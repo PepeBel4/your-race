@@ -44,7 +44,7 @@ class RacesController < ApplicationController
   private
 
   def race_params
-    params.permit(:name, :race_type, :race_order, :final, :aasm_state)
+    params.permit(:name, :race_type, :race_order, :final, :aasm_state, :scheduled_for, :started_at)
   end
 
   def set_fleet
