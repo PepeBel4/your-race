@@ -11,7 +11,7 @@ class RacesController < ApplicationController
   end
 
   def open
-    races = Race.where(aasm_state: [:announced, :scheduled, :in_progress, :cancelled])
+    races = Race.where(aasm_state: [:announced, :scheduled, :in_progress, :postponed, :individual_recall, :general_recall, :cancelled])
     #races = Race.all
     render json: races, each_serializer: Race2Serializer
   end
