@@ -4,7 +4,7 @@ class RacesController < ApplicationController
 
   before_action :set_fleet, only: [:index, :create]
   before_action :set_race, only: [:show, :update, :destroy]
-  #after_action :pubnub
+  after_action :pubnub, only: [:update]
 
   def index
     json_response(@fleet.races)
@@ -27,11 +27,7 @@ class RacesController < ApplicationController
 
   def update
     @race.update(race_params)
-
-    @race.started_at = nil if @race.aasm_state == 'cancelled'
-    @race.save!
-
-    json_response(@race)
+    render json: @race, serializer: Race2Serializer
   end
 
   def
@@ -44,7 +40,7 @@ class RacesController < ApplicationController
   private
 
   def race_params
-    params.permit(:name, :race_type, :race_order, :final, :aasm_state, :scheduled_for, :started_at)
+    params.permit(:name, :race_type, :race_order, :final, :aasm_state, :scheduled_for, :started_at, :individual_recall)
   end
 
   def set_fleet
