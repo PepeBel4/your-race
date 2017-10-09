@@ -1,5 +1,5 @@
 class FinishesController < ApplicationController
-  before_action :set_metric
+  before_action :set_metric, except: [:register]
   before_action :set_finish, only: [:show, :update, :destroy]
 
   def update_positions
@@ -20,6 +20,11 @@ class FinishesController < ApplicationController
     json_response(@metric)
   end
 
+  def register
+    p 'WILL NOW REGISTER A FINISH'
+    render json: {result: 'ok'}
+  end
+
   def create
     @finish = Finish.create
     @finish.metric = @metric
@@ -30,13 +35,11 @@ class FinishesController < ApplicationController
     json_response(@metric, :created)
   end
 
-  # PUT /competitions/:competition_id/races/:id
   #def update
   #  @race.update(race_params)
   #  head :no_content
   #end
 
-  # DELETE /competitions/:competition_id/races/:id
   #def destroy
   #  @race.destroy
   #  head :no_content

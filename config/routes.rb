@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   
   get '/races/open', to: 'races#open'
   resources :races
+
+  post '/finishes/register', to: 'finishes#register'
   
     resources :competitions do
 		resources :groups do
