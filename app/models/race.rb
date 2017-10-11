@@ -14,6 +14,13 @@ class Race < ApplicationRecord
     (Time.now - started_at).to_int if started_at
   end
 
+  def inProgress?
+    if ["in_progress", "individual_recall"].include?(self.aasm_state) 
+      return true
+    else return false
+    end
+  end
+
   #model association
   belongs_to :fleet
   has_many :metrics, dependent: :destroy

@@ -16,7 +16,10 @@ Rails.application.routes.draw do
 
   post '/finishes/register', to: 'finishes#register'
   
-    resources :competitions do
+  resources :competitions do
+		
+    	get '/competitors', to: 'competitors#for_competition'
+
 		resources :groups do
 			resources :competitors
 			resources :scorings do

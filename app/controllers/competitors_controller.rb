@@ -1,10 +1,15 @@
 class CompetitorsController < ApplicationController
-  before_action :set_group
+  before_action :set_group, except: [:for_competition]
   before_action :set_competitor, only: [:show, :update, :destroy]
 
   def index
     #json_response(@competition.competitors)
     render json: @group.competitors
+  end
+
+  def for_competition
+    competitors = Competitor.all
+    render json: competitors
   end
 
   def show

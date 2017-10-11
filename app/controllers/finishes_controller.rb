@@ -21,8 +21,31 @@ class FinishesController < ApplicationController
   end
 
   def register
-    p 'WILL NOW REGISTER A FINISH'
-    render json: {result: 'ok'}
+    
+    #we have a competitor, we now which races he has joined, let's list them
+    competitor_id = params[:id]
+    competitor = Competitor.find(competitor_id)
+    
+    competitor.race_competitors.each do |race_competitor|
+      p "Competitor racing in race : #{race_competitor.race_id}"
+      #let's get some data from this race
+      race = Race.find(race_competitor.race_id)
+      p "This is the race: #{race.name}"
+      p "Status:#{race.aasm_state}"
+      if race.inProgress?
+        #finish this competitor!
+        @finish = Finish.create
+        #still hardcoded, needs to be changed!
+        @finish.metric = Metric.find(4)
+        @finish.race_competitor = race_competitor
+        @finish.timestamp = params[:timestamp]
+        @finish.save!
+        update_positions
+        @finish = Finish.find(@finish.id)
+      end
+    end
+
+    render json: @finish
   end
 
   def create

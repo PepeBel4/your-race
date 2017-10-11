@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 20171009143959) do
     t.string "created_by"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "aasm_state"
   end
 
   create_table "competitors", force: :cascade do |t|
@@ -121,11 +120,11 @@ ActiveRecord::Schema.define(version: 20171009143959) do
     t.bigint "fleet_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "scheduled_for"
     t.datetime "started_at"
     t.datetime "finished_at"
     t.datetime "canceled_at"
     t.string "aasm_state"
-    t.datetime "scheduled_for"
     t.boolean "individual_recall"
     t.index ["fleet_id"], name: "index_races_on_fleet_id"
   end
